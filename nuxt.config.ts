@@ -1,6 +1,10 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
 
+  alias: {
+    '@components': './components',
+  },
+
   modules: [
     '@pinia/nuxt',
     '@nuxtjs/tailwindcss'
@@ -21,6 +25,7 @@ export default defineNuxtConfig({
       ]
     }
   },
+
   runtimeConfig: {
     public: {
       tailwindcss: {
